@@ -1,0 +1,207 @@
+@media screen and (max-width: $desktop) {
+  .section.wrap {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .menu-button {
+    z-index: 1;
+  }
+  .icon-mobile {
+    z-index: 2;
+  }
+}
+@media screen and (max-width: $tablet) {
+  .test2 {
+    display: flex;
+    margin-bottom: 15px;
+  }
+  .test3 {
+    display: flex;
+  }
+  .wrap-block {
+    width: 450px;
+  }
+}
+@media screen and (min-width: $tablet) {
+  .buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  .test2 {
+    display: flex;
+  }
+  .test3 {
+    display: flex;
+  }
+}
+.test2 {
+  @media screen and (min-width: $desktop) {
+    margin: 0;
+  }
+  @media screen and (max-width: $mobile) {
+    .wrap-block {
+      width: 100%;
+    }
+    .test2 {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+  .test3 {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: $tablet) {
+  .wrap-block {
+    width: calc((100% - 4 * 15px) / 2);
+    margin: 15px;
+  }
+  .wrap-section {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+}
+@media screen and (min-width: $desktop) {
+  .wrap-block {
+    width: calc((100% - 6 * 15px) / 3);
+    margin: 15px;
+  }
+  .wrap-section {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+  .section.wrap {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+.wrap-block img {
+  @media screen and (max-width: $desktop) {
+    display: none;
+  }
+  @media screen and (max-width: $mobile) {
+    display: block;
+  }
+}
+.portfolio-techno {
+  @media screen and (min-width: $mobile) {
+    height: 294px;
+    background-image: url("../img/mobiletechno.jpg");
+  }
+  @media screen and (min-width: $tablet) {
+    background-image: url("../img/tablettechno.jpg");
+  }
+  @media screen and (min-width: $desktop) {
+    display: block;
+    background-image: none;
+  }
+}
+.portfolio-orlean {
+  @media screen and (min-width: $mobile) {
+    height: 294px;
+    background-image: url("../img/mobileorlean.jpg");
+  }
+  @media screen and (min-width: $tablet) {
+    background-image: url("../img/tabletorlean.jpg");
+  }
+  @media screen and (min-width: $desktop) {
+    display: block;
+    background-image: none;
+  }
+}
+.portfolio-food {
+  @media screen and (min-width: $mobile) {
+    height: 294px;
+    background-image: url("../img/mobilefood.jpg");
+  }
+  @media screen and (min-width: $tablet) {
+    background-image: url("../img/tabletfood.jpg");
+  }
+  @media screen and (min-width: $desktop) {
+    display: block;
+    background-image: none;
+  }
+}
+.portfolio-phones {
+  @media screen and (min-width: $mobile) {
+    height: 294px;
+    background-image: url("../img/mobilephones.jpg");
+  }
+  @media screen and (min-width: $tablet) {
+    background-image: url("../img/tabletphones.jpg");
+  }
+  @media screen and (min-width: $desktop) {
+    display: block;
+    background-image: none;
+  }
+}
+.portfolio-block {
+  @media screen and (min-width: $mobile) {
+    height: 294px;
+    background-image: url("../img/mobileblock.jpg");
+  }
+  @media screen and (min-width: $tablet) {
+    background-image: url("../img/tabletblock.jpg");
+  }
+  @media screen and (min-width: $desktop) {
+    display: block;
+    background-image: none;
+  }
+}
+.portfolio-screen {
+  @media screen and (min-width: $mobile) {
+    height: 294px;
+    background-image: url("../img/mobilescreen.jpg");
+  }
+  @media screen and (min-width: $tablet) {
+    background-image: url("../img/tabletscreen.jpg");
+  }
+  @media screen and (min-width: $desktop) {
+    display: block;
+    background-image: none;
+  }
+}
+.portfolio-book {
+  @media screen and (min-width: $mobile) {
+    height: 294px;
+    background-image: url("../img/mobilebook.jpg");
+  }
+  @media screen and (min-width: $tablet) {
+    background-image: url("../img/tabletbook.jpg");
+  }
+  @media screen and (min-width: $desktop) {
+    display: block;
+    background-image: none;
+  }
+}
+.portfolio-lab {
+  @media screen and (min-width: $mobile) {
+    height: 294px;
+    background-image: url("../img/mobilelab.jpg");
+  }
+  @media screen and (min-width: $tablet) {
+    background-image: url("../img/tabletlab.jpg");
+  }
+  @media screen and (min-width: $desktop) {
+    display: block;
+    background-image: none;
+  }
+}
+.portfolio-laptop {
+  @media screen and (min-width: $mobile) {
+    height: 294px;
+    background-image: url("../img/mobilelaptop.jpg");
+  }
+  @media screen and (min-width: $tablet) {
+    background-image: url("../img/tabletlaptop.jpg");
+  }
+  @media screen and (min-width: $desktop) {
+    display: block;
+    background-image: none;
+  }
+}

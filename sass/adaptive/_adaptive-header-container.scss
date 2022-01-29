@@ -1,0 +1,227 @@
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (max-width: $mobile) {
+    width: 100%;
+  }
+  @media screen and (min-width: $mobile) {
+    width: $mobile;
+  }
+  @media screen and (min-width: $tablet) {
+    width: $tablet;
+  }
+  @media screen and (min-width: $desktop) {
+    width: $desktop;
+  }
+}
+.contacts-phone__link {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 40px;
+  letter-spacing: 0.02em;
+  color: #2196f3;
+}
+@media screen and (max-width: $tablet) {
+  .contacts-mail {
+    margin-bottom: 32px;
+  }
+}
+.contacts-mail__link {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.02em;
+  color: #757575;
+}
+.header-soc {
+  @media screen and (min-width: $tablet) {
+    display: none;
+  }
+  @media screen and (max-width: $mobile) {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: $tablet) {
+  .header-soc {
+    display: flex;
+    margin-top: 64px;
+    &__link {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 22px;
+      letter-spacing: 0.02em;
+      border-right: 1px solid rgba(33, 33, 33, 0.2);
+      color: #2196f3;
+      padding-right: 10px;
+    }
+
+    .twitter {
+      padding-left: 10px;
+    }
+  }
+  .linkedin {
+    padding-left: 10px;
+    border: none;
+  }
+  .facebook {
+    padding-left: 10px;
+  }
+}
+.icon-mobile {
+  &.is-open {
+    .open-mobile {
+      display: none;
+    }
+  }
+  &.is-open {
+    .close-mobile {
+      display: block;
+    }
+  }
+}
+.close-mobile {
+  &:hover,
+  &:focus {
+    fill: $hover;
+  }
+}
+
+.icon-mobile {
+  z-index: 1;
+  background-color: transparent;
+  border-color: transparent;
+  cursor: pointer;
+  .close-mobile {
+    display: none;
+  }
+}
+
+@media screen and (max-width: $tablet) {
+  .site-nav__link {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 47px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #212121;
+    display: inline-block;
+  }
+  .site-nav__active {
+    color: $hover;
+  }
+}
+@media screen and (max-width: $tablet) {
+  .contacts-list {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+@media screen and (min-width: $tablet) {
+  .menu-button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-grow: 1;
+  }
+}
+@media screen and (max-width: $tablet) {
+  .site-nav__active::after {
+    display: none;
+  }
+  .header-mainnav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+  .contacts-icon {
+    display: none;
+  }
+  .menu-button {
+    position: absolute;
+    display: none;
+    padding: 48px 83px 48px 40px;
+    min-height: 100vh;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #ffffff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08),
+      0px 1px 3px rgba(0, 0, 0, 0.16);
+
+    &.is-open {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}
+@media screen and (min-width: $tablet) {
+  .icon-mobile {
+    display: none;
+  }
+}
+
+@media screen and (min-width: $tablet) {
+  .contacts-icon {
+    margin-right: 8px;
+  }
+  .header-mainnav {
+    align-items: center;
+    display: flex;
+  }
+  .site-nav {
+    padding-left: 88px;
+    display: flex;
+  }
+  .contacts-list {
+    margin-left: auto;
+  }
+  .contacts-link {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.02em;
+    color: #757575;
+  }
+}
+@media screen and (min-width: $desktop) {
+  .contacts-list {
+    display: flex;
+    align-items: center;
+  }
+  .contacts-link {
+    display: flex;
+    align-items: center;
+  }
+  .contacts-mail {
+    margin-left: 30px;
+  }
+}
+@media screen and (max-width: $desktop) {
+  .section.work {
+    display: none;
+  }
+  .site-nav {
+    margin-bottom: auto;
+  }
+}
+@media screen and (min-width: $desktop) {
+  .contacts-link {
+    font-size: 14px;
+    line-height: 16px;
+  }
+}

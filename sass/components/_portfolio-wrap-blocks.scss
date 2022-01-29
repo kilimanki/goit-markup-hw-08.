@@ -1,0 +1,126 @@
+.container-offer__hiden {
+  display: none;
+}
+.buttons {
+  margin-bottom: 50px;
+  & .all {
+    width: 73px;
+  }
+  & .web {
+    width: 128px;
+  }
+}
+.buttons {
+  & .apss {
+    width: 145px;
+  }
+  & .des {
+    width: 103px;
+  }
+}
+.buttons {
+  & .mar {
+    width: 130px;
+  }
+}
+.link-button:not(:last-child) {
+  margin-right: 8px;
+}
+.button-portfolio {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62em;
+  background-color: $grayBC;
+  border-radius: 4px;
+  height: 38px;
+  border-color: transparent;
+  cursor: pointer;
+  transition: color, background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+    background-color: $hover;
+    color: $whiteColor;
+  }
+}
+
+.wrap-block {
+  position: relative;
+  margin-right: 30px;
+  margin-bottom: 30px;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.pseudo-el {
+  position: absolute;
+  width: 100%;
+  height: 294px;
+  overflow: hidden;
+  &::before {
+    display: block;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: rgba(33, 150, 243, 0.9);
+    transform: translateY(100%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &_text {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 63px 24px 63px 24px;
+    transform: translateY(100%);
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 28px;
+    color: var(--white-color);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+.pseudo-el_text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 63px 24px 63px 24px;
+  transform: translateY(100%);
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 28px;
+  color: $whiteColor;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.wrap-block {
+  &:hover .pseudo-el::before,
+  &:hover .pseudo-el_text {
+    transform: translateY(0);
+  }
+  &:hover {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+}
+.under-photo {
+  border: 1px solid #eeeeee;
+  border-top: none;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+.title-list {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2em;
+  letter-spacing: 0.06em;
+  margin-bottom: 4px;
+  color: $primaryTextColor;
+}
+.under-title {
+  font-size: 16px;
+  line-height: 1.87em;
+  color: $textColor;
+}

@@ -1,0 +1,77 @@
+.main-footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: #2f303a;
+}
+.footer {
+  &-title {
+    font-family: Raleway;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 1.19em;
+    color: $whiteColor;
+  }
+  &-list {
+    margin-top: 10px;
+  }
+}
+.footer-list .footer-list__contacts {
+  & {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.71em;
+    color: rgba(255, 255, 255, 0.6);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &:hover,
+  &:focus {
+    color: $hover;
+  }
+}
+.footer-list .footer-list__street {
+  color: $whiteColor;
+}
+.contacts-footer_position:not(:last-child) {
+  margin-bottom: 9px;
+}
+.footer-form {
+  &__title {
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: $whiteColor;
+    margin-bottom: 20px;
+  }
+  &__subscribe {
+    color: $whiteColor;
+    margin-right: 20px;
+  }
+}
+.footer-form {
+  &__input {
+    font-size: 16px;
+    line-height: 20px;
+    color: rgba(255, 255, 255, 0.6);
+    height: 50px;
+    padding-left: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background: #2f303a;
+  }
+  &__button {
+    margin-top: 20px;
+    position: relative;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 30px;
+    height: 50px;
+    background: #2196f3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    color: var(--white-color);
+    cursor: pointer;
+    border-color: transparent;
+  }
+}

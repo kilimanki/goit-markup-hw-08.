@@ -1,0 +1,26 @@
+$textColor: #757575;
+$hover: #2196f3;
+$primaryTextColor: #212121;
+$whiteColor: white;
+$mainFF: Roboto, "sans-serif";
+$mainStyle: normal;
+$mainWeight: normal;
+$mainSize: 14px;
+$mainLH: 1.71;
+$mainLetter-spacing: 0.03em;
+$grayBC: #f5f4fa;
+$iconColor: #afb1b8;
+li {
+  list-style-type: none;
+}
+ul {
+  margin-left: 0;
+  padding-left: 0;
+}
+.header-mainnav__title,
+a {
+  text-decoration: none;
+}
+* {
+  margin: 0;
+}
